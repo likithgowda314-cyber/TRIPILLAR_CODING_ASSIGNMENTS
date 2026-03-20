@@ -1,0 +1,18 @@
+package Module9;
+
+public class PrintingNumbers {
+    public static void printNumbers(int n) {
+        if (n == 0) {
+            return;
+        }
+        printNumbers(n -1);
+        System.out.print(n + " ");
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.println("Numbers from 1 to " + n + ":");
+        printNumbers(n);
+        System.out.println();
+    }
+}
